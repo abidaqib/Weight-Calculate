@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfe4d7"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b5d2c0"
+        android:gravity="center"
+        android:padding="5dp"
+
+        android:text="Convert Your Weight"
+        android:textColor="#39507e"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="your weight..."
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textSize="40sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton_PtoK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioButton"
+            android:padding="3dp"
+            android:text="Pount To Kilogram"
+            android:textColor="#41237c"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton_KtoP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRadioButton"
+            android:padding="3dp"
+            android:text="Killogram To Pount"
+            android:textColor="#41237c"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#2c3870"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_Convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#b5d2c0"
+            android:onClick="convert"
+            android:padding="15dp"
+            android:text="Convert"
+            android:textColor="#2e762e"
+
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
